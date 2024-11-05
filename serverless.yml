@@ -1,0 +1,11 @@
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: hb-serverless-project
+frameworkVersion: '4'
+
+provider:
+  name: aws
+  runtime: python3.12
+
+functions: # 람다 함수
+  hello: # 람다 함수명
+    handler: handler.hello #람다가 구동시킬 핸들러
